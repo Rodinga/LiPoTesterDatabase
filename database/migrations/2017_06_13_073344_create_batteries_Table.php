@@ -32,6 +32,7 @@ class CreateBatteriesTable extends Migration
      */
     public function down()
     {
-        //
+        $table->dropColumn(['id','rated_cap','source','manufacturer','part_number',
+            'choices','added_on','assignment']);
     }
 }
